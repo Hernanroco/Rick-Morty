@@ -1,0 +1,12 @@
+.app{
+    display: flex;
+    text-align: center;
+}
+
+.nav{
+    display: flex;
+    justify-content: end;
+    flex-direction:row;
+    padding: 2em;
+    margin-bottom: -1.5em;
+}

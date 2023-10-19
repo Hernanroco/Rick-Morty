@@ -1,0 +1,20 @@
+.bar{
+  width: 15%;
+}
+
+.searchInput{
+  box-shadow:  0px 0px 1px 1px #4af009d0;
+  border-radius: 15px 10px 10px 15px;
+  background-color: rgb(255, 255, 255);
+  height: 3em ;
+  
+
+}
+
+.searchButton{
+  margin: 0.5em;
+  border: black;
+  border-radius: 10px 15px 15px 10px;
+  background-color: greenyellow;
+  height: 1.3em;
+}
