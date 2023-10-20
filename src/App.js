@@ -1,19 +1,28 @@
 import style from './App.module.css';
-import SearchBar from "./components/SearchBar/SearchBar.jsx";
-
-
+import Nav from "./components/Nav/Nav.jsx";
 import Cards from "./components/Cards/Cards.jsx";
-import characters from './data';
-
+import { useState } from 'react';
 
 
 function App() {
+  const [characters, setCharacters] = useState([{}]);
+
+function onSearch(character) {
+  fetch(`https://rickandmortyapi.com/api/character/${character}`)
+    .then((response) => response.json())
+    .then((data) => {
+        if (data.name) {
+          setCharacters((oldChars) => [...oldChars, data]);
+        } else {
+          window.alert('No hay personajes con ese ID');
+        }
+    });
+}
   return (
     <div className='App'>
       <div className={style.nav}>
-        <SearchBar onSearch={(characterID) => window.alert(characterID)}/>
+        <Nav onSearch={onSearch.SearchBar}/>
       </div>
-      <hr></hr>
       <div>
         <Cards characters={characters}/>
       </div>

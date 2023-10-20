@@ -1,1 +1,6 @@
-
+.App{
+    @font-face {
+        font-family: "r&m";
+        src: url("../fuente/r&m.ttf");
+    }
+}

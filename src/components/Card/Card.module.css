@@ -5,15 +5,11 @@
     background-color: #1132eb;
     width: fit-content;
     border-radius: 10px;
-    @font-face {
-        font-family: "r&m";
-        src: url("../fuente/r&m.ttf") format("truetype");
-    }
     flex-direction: column;
 }
 
 h1{
-    font-family: "r&m";
+    font-family: "r&m", fantasy;
 }
 
 h2{
@@ -60,6 +56,10 @@ figcaption{
     font: 20px/30px;
     color: #4af009d0;
     border-radius: 8px;
+    @font-face {
+        font-family: "r&m";
+        src: url("../fuente/r&m.ttf");
+    }
 }
     
 
